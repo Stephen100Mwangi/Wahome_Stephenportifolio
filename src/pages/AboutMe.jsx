@@ -6,7 +6,7 @@ const AboutMe = () => {
 
     const [seeMore,setMore] = useState(false)
   return (
-    <div className='flex flex-row w-full px-8 py-12 max-h-screen bg-back overflow-clip max-sm:flex-col'>
+    <div id='aboutMe' className='flex flex-row w-full h-fit px-8 py-12 max-h-screen bg-back max-sm:overflow-clip max-sm:flex-col'>
         <div className="left flex flex-col justify-center items-center w-1/2 h-fit p-8 max-sm:flex-col max-sm:w-full">
             <div className='text-card text-3xl font-bold z-50'>
                 About <span className='text-orange'>Me</span>?

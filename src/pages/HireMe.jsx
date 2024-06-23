@@ -11,7 +11,7 @@ const HireMe = () => {
   const stopDate = new Date().getFullYear();
   const years = stopDate - startDate
   return (
-    <div className='flex flex-row px-8 py-12 justify-between max-sm:flex-col max-sm:space-y-10'>
+    <div id='hireMe' className='flex flex-row px-8 py-12 justify-between max-sm:flex-col max-sm:space-y-10'>
         <div className="w-1/2 flex flex-col space-y-20 justify-center items-center max-sm:w-full">
             <div className="text-3xl font-bold text-orange">Why <span className='text-card'>Hire</span> Me?</div>
             <div className='w-8/12'>

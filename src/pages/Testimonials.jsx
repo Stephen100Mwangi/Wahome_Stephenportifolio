@@ -5,8 +5,18 @@ import { RiSendPlaneFill } from "react-icons/ri";
 
 const Testimonials = () => {
   return (
-    <div className='flex justify-center items-start py-12 pt-10 min-h-screen px-8'>
-      <form action="" className='flex flex-col space-y-8 p-6 shadow-lg justify-center items-center max-sm:w-[300px]'>
+    <div id='testimonials' className='flex justify-center items-start py-12 pt-10 min-h-screen px-8'>
+      <form action="https://formsubmit.co/mwangiwahome70@gmail.com" method="POST" className='flex flex-col space-y-8 p-6 shadow-lg justify-center items-center max-sm:w-[300px]'>
+
+        {/* <!-- Honeypot --> */}
+        {/* <!-- Mitigate spammers --> */}
+
+        {/* <input type="text" name="_honey" style="display: none;" /> */}
+
+        {/* <!-- Disable captcha --> */}
+        {/* <input type="hidden" name="_captcha" value="false"></input> */}
+        {/* <input type="hidden" name="_next" value="https://stephen100mwangi.github.io/contactform/success.html" /> */}
+
         <div className='text-orange text-center w-full text-3xl font-bold'>Contact <span className='text-card'>Me</span></div>
         <div className="flex flex-col space-y-2 w-[95%]">
             <label htmlFor="Subject" className='font-bold text-base'>Subject</label>

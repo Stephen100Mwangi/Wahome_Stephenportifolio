@@ -25,7 +25,7 @@ const Skills = () => {
   const ui = 90;
   const back = 80;
   return (
-    <div className='flex flex-col space-y-24 px-8 py-12 max-sm:spacey-10'>
+    <div id='skills' className='flex flex-col space-y-24 px-8 py-12 max-sm:spacey-10'>
       <div className="text-3xl font-bold text-orange w-full text-center">My <span className='text-card'>Skills</span></div>
 
       <div className="flex flex-row justify-evenly max-sm:flex-col">
