@@ -8,6 +8,10 @@
 .openSans{
     font-family: Open Sans;
 }
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
 
 @layer utilities {
     /* Hide scrollbar for Chrome, Safari and Opera */

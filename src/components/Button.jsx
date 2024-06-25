@@ -1,13 +1,25 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import PropTypes from 'prop-types'
+import { motion } from 'framer-motion'
 
 const Button = ({text,bgColor,textColor,icon}) => {
   return (
-    <button className={`text-${textColor} bg-${bgColor} text-lg hover:rounded-full px-10 p-3 w-fit  cursor-pointer flex items-center justify-center`}>
+    <motion.button 
+      className={`text-${textColor} bg-${bgColor} text-lg rounded-full hover:rounded-full px-10 p-3 w-fit  cursor-pointer flex items-center justify-center`}
+      whileHover={{
+        scale: 1.05
+      }}
+      whileTap={{
+        scale: 0.95,
+      }}
+      transition={{
+        duration:.3
+      }}
+      >
         <span className='flex justify-center items-center ml-4'>{text}</span>
         <span className='flex justify-center items-center ml-4'>{icon}</span>
-    </button>
+    </motion.button>
   )
 }
 

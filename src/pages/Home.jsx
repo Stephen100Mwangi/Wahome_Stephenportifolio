@@ -13,7 +13,8 @@ const Home = () => {
               <div><MdWavingHand /></div>
           </div>
           <p className='font-bold text-4xl text-white max-sm:text-3xl'>I am <span>Stephen Mwangi</span> a <span className='text-orange'>Web Developer</span></p>
-          <Button text='View Portfolio' textColor='white' bgColor='orange'></Button>
+          <a href="#projects"><Button text='View Portfolio' textColor='white' bgColor='orange'></Button></a>
+         
         </div>
      
     </div>

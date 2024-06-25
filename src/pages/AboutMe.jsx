@@ -1,6 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react'
 import Button from '../components/Button'
+import { motion } from 'framer-motion'
+import { backInOut } from 'framer-motion/dom'
 
 const AboutMe = () => {
 
@@ -11,9 +13,31 @@ const AboutMe = () => {
             <div className='text-card text-3xl font-bold z-50'>
                 About <span className='text-orange'>Me</span>?
             </div>
-            <div className='-mt-28 z-10 max-sm:hidden'>
+            <motion.div 
+                className='-mt-28 z-10 max-sm:hidden'
+                initial={{
+                    // rotate: "0deg",
+                    scale: 0.1
+                }}
+                animate={{
+                    // rotate: "360deg",
+                    scale: [.25,.75,.6,1]
+                }}
+                transition={{
+                    duration:3,
+                    ease: backInOut,
+                    times: [0,0.4,0.7,1]
+                }}
+                exit={{
+                    rotate: "0deg",
+                    scale: "1"
+                }}
+                // transition={={{
+                //     duration:1
+                // }}}
+                >
                 <img src="./public/me.png" alt="" className='object-cover scale-90'/>
-            </div>
+            </motion.div>
         </div>
 
         <div className="right flex flex-col space-y-10 w-1/2 max-sm:w-full max-sm:justify-center max-sm:items-center h-fit">
