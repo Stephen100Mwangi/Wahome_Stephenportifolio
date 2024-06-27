@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 import { FaCirclePlus } from 'react-icons/fa6'
 import git from '/git.svg'
 import string from '/strings.svg'
+import { motion } from 'framer-motion'
 
 const Blogs = () => {
   return (
@@ -20,7 +21,16 @@ const Blogs = () => {
         <Link to='https://medium.com/@mwangiwahome70/dissecting-git-and-github-1d4215064711' target='_blank'>
           <ProjectCard image={git} text='Git & Github Essentials' description='Git and Github are common in programming.However navigating these concepts is not just a cup of tea.Git your self rolling with all Git and Github concepts'/>
         </Link>
-        <Link to='https://medium.com/@mwangiwahome70' target='_blank'>
+        <Link 
+          to='https://medium.com/@mwangiwahome70'
+          target='_blank'
+          animate={{
+            scale: [.5,.75]
+          }}
+          exit={{
+
+          }}
+        >
           <ProjectCard image={blogImage} text={<FaCirclePlus />}></ProjectCard>
         </Link>
       </div>
