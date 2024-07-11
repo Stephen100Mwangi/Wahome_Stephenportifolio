@@ -22,6 +22,7 @@ const Blogs = () => {
           <ProjectCard image={git} text='Git & Github Essentials' description='Git and Github are common in programming.However navigating these concepts is not just a cup of tea.Git your self rolling with all Git and Github concepts'/>
         </Link>
         <Link 
+          className='flex justify-center items-center'
           to='https://medium.com/@mwangiwahome70'
           target='_blank'
           animate={{
@@ -31,7 +32,7 @@ const Blogs = () => {
 
           }}
         >
-          <ProjectCard image={blogImage} text={<FaCirclePlus />}></ProjectCard>
+          <div className='flex justify-center items-center'><Button text='See More Blogs' bgColor='orange' textColor='white' className='hover:shadow-sm  bg-orange'></Button></div>
         </Link>
       </div>
     </div>

@@ -1,12 +1,13 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react'
 import Button from '../components/Button'
 import { RiSendPlaneFill } from "react-icons/ri";
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { YOUR_SERVICE_ID } from '../../secrets';
-import { YOUR_TEMPLATE_ID } from '../../secrets';
-import { YOUR_PUBLIC_KEY } from '../../secrets';
+// import { YOUR_SERVICE_ID } from '/PersonalPortifolio/secrets.js';
+// import { YOUR_TEMPLATE_ID } from '/PersonalPortifolio/secrets.js';
+// import { YOUR_PUBLIC_KEY } from '/PersonalPortifolio/secrets.js';
 import toast from 'react-hot-toast';
 import { Toaster } from 'react-hot-toast';
 
@@ -21,8 +22,11 @@ const Testimonials = () => {
       const toastId = toast.loading("Sending email...");
 
       emailjs
-        .sendForm(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, form.current, {
-          publicKey: YOUR_PUBLIC_KEY,
+        .sendForm(
+          process.env.YOUR_SERVICE_ID,
+          process.env.YOUR_TEMPLATE_ID,
+          form.current, {
+          publicKey: process.env.YOUR_PUBLIC_KEY,
         })
         .then(
           () => {

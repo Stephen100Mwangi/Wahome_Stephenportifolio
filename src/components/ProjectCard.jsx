@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 const ProjectCard = ({image,text,description,languages,actualWidth,height}) => {
   return (
-    <div id='projectCard' className={`min-w-[300px] rounded-lg flex flex-col space-y-5`}>
+    <div id='projectCard' className={`w-[320px] rounded-lg flex flex-col space-y-5`}>
       <div><img src={image} alt="Image" className='w-full shadow h-[250px] rounded-lg object-cover ' /></div>
       <div className="flex flex-col items-start justify-start space-y-3">
         <div className='text-orange font-medium text-base '>{text}</div>

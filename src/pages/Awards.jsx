@@ -13,9 +13,14 @@ const Awards = () => {
             </div>
         </div>
         <div className="w-1/2 flex flex-col max-sm:w-full">
-           <div className="flex flex-col space-y-5 pl-8 max-sm:space-y-10">
+           <div className="flex flex-col space-y-10 pl-8 max-sm:space-y-10">
                 <AwardCard institution='Dedan Kimathi University of Technology' award='A- 74 Points' course='Bsc Computer Science' time='2021-2025' ></AwardCard>
                 <AwardCard institution='Kagumo High School' award='A- 74 Points' course='Kenya Certificate of Secondary Education' time='2017-2020' ></AwardCard>
+                <div className='flex flex-col space-y-3 my-32'>
+                  <div className='font-bold pb-3 underline'>Certifications</div> 
+                  <AwardCard institution='Postman' award='Student Expert' course='AI Postman Student Expert'></AwardCard>
+                </div>
+                
            </div>
         </div>
     </div>

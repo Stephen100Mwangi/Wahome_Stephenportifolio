@@ -6,9 +6,9 @@ import { motion } from 'framer-motion'
 const Button = ({text,bgColor,textColor,icon}) => {
   return (
     <motion.button 
-      className={`text-${textColor} bg-${bgColor} text-lg rounded-full hover:rounded-full px-10 p-3 w-fit  cursor-pointer flex items-center justify-center`}
+      className={`text-${textColor} bg-${bgColor} text-lg rounded-sm hover:rounded-full px-10 p-3 w-fit ease-in-out cursor-pointer flex items-center justify-center`}
       whileHover={{
-        scale: 1.05
+        scale: 1
       }}
       whileTap={{
         scale: 0.95,
@@ -17,7 +17,7 @@ const Button = ({text,bgColor,textColor,icon}) => {
         duration:.3
       }}
       >
-        <span className='flex justify-center items-center ml-4'>{text}</span>
+        <span className='flex justify-center text-base items-center ml-4'>{text}</span>
         <span className='flex justify-center items-center ml-4'>{icon}</span>
     </motion.button>
   )

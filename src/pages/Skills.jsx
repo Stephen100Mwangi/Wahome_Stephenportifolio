@@ -28,10 +28,10 @@ const Skills = () => {
     <div id='skills' className='flex flex-col space-y-24 px-8 py-12 max-sm:spacey-10'>
       <div className="text-3xl font-bold text-orange w-full text-center">My <span className='text-card'>Skills</span></div>
 
-      <div className="flex flex-row justify-evenly max-sm:flex-col">
-        <SkillCard text='4+ years experience' skill='UI/UX Design' skill_progress={<CircularProgressbar value={ui} text={`${ui}%`} styles={buildStyles({pathColor:'#FF7F3E',textColor:"#FF7F3E"})}/>} ></SkillCard>
-        <SkillCard text='3+ years experience' skill='Frontend Web Development' skill_progress={<CircularProgressbar value={web} text={`${web}%`} styles={buildStyles({pathColor:'#0F1035',textColor:"#0F1035"})}/>} ></SkillCard>
-        <SkillCard text='2 years experience' skill='Backend Development' skill_progress={<CircularProgressbar value={back} text={`${back}%`} styles={buildStyles({pathColor:'#000000', pathTransitionDuration: 0.5,rotation: 0.25,textColor:"#000000"})}/>} ></SkillCard>
+      <div className="flex flex-row flex-wrap gap-10 justify-evenly max-sm:flex-col">
+        <SkillCard text='4+ years experience' skill='UI/UX Design' skill_progress={<CircularProgressbar className='max-lg:scale-75 flex justify-center items-center' value={ui} text={`${ui}%`} styles={buildStyles({pathColor:'#FF7F3E',textColor:"#FF7F3E"})}/>} ></SkillCard>
+        <SkillCard text='3+ years experience' skill='Frontend Web Development' skill_progress={<CircularProgressbar className='max-lg:scale-75 flex justify-center items-center' value={web} text={`${web}%`} styles={buildStyles({pathColor:'#0F1035',textColor:"#0F1035"})}/>} ></SkillCard>
+        <SkillCard text='2 years experience' skill='Backend Development' skill_progress={<CircularProgressbar className='max-lg:scale-75 flex justify-center items-center' value={back} text={`${back}%`} styles={buildStyles({pathColor:'#000000', pathTransitionDuration: 0.5,rotation: 0.25,textColor:"#000000"})}/>} ></SkillCard>
       </div>
 
       <div className="flex flex-row justify-between items-start max-sm:flex-col-reverse max-sm:-space-y-80">
