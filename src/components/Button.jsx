@@ -3,7 +3,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { motion } from 'framer-motion'
 
-const Button = ({text,bgColor,textColor,icon}) => {
+const Button = ({text,bgColor,textColor}) => {
   return (
     <motion.button 
       className={`text-${textColor} bg-${bgColor} text-lg rounded-sm hover:rounded-full px-10 p-3 w-fit ease-in-out cursor-pointer flex items-center justify-center`}
@@ -18,7 +18,7 @@ const Button = ({text,bgColor,textColor,icon}) => {
       }}
       >
         <span className='flex justify-center text-base items-center ml-4'>{text}</span>
-        <span className='flex justify-center items-center ml-4'>{icon}</span>
+        {/* <span className='flex justify-center items-center ml-4'>{icon}</span> */}
     </motion.button>
   )
 }
@@ -27,7 +27,7 @@ Button.propTypes = {
     text: PropTypes.string,
     bgColor: PropTypes.string,
     textColor: PropTypes.string,
-    icon: PropTypes.element
+    // icon: PropTypes.element
 }
 
 export default Button

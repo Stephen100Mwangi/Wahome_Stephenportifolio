@@ -12,6 +12,7 @@ import Skills from './pages/Skills'
 import Blogs from './pages/Blogs'
 import Awards from './pages/Awards'
 import HireMe from './pages/HireMe'
+import FigmaProjects from './pages/FigmaProjects'
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Home />
         <AboutMe />
         <Projects />
+        <FigmaProjects />
         <Skills />
         <Awards />
         <Blogs />
