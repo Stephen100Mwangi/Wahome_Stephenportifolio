@@ -1,9 +1,21 @@
 /* eslint-disable no-unused-vars */
-import React from 'react'
+import React, { useState } from 'react'
 import { MdWavingHand } from "react-icons/md";
 import Button from '../components/Button';
 
 const Home = () => {
+  const options = ["Web Developer","UI/UX Designer"];
+  const randomRole = options[0];
+  const randomRole2 = options[1];
+
+  const [role,setRole] = useState(randomRole);
+  setTimeout(() => {
+    if (role === randomRole) {
+      setRole(randomRole2)
+    }else{
+      setRole(randomRole)
+    }
+  }, 5000);
   return (
     <div id='home' className={`h-[85vh] relative w-full flex justify-center items-start bg-[url('/image333.png')] bg-cover bg-center`}>
         <div className="absolute h-[100%] w-[100%] inset-0 bg-black opacity-80"></div>
@@ -12,7 +24,7 @@ const Home = () => {
               <p>Hello</p>
               <div><MdWavingHand /></div>
           </div>
-          <p className='font-bold text-4xl text-white max-sm:text-3xl'>I am <span>Stephen Mwangi</span> a <span className='text-orange'>Web Developer</span></p>
+          <p className='font-bold text-4xl text-white max-sm:text-3xl'>I am <span>Stephen Mwangi</span> a <span className='text-orange'>{role}</span></p>
           <a href="#projects"><Button text='View Portfolio' textColor='white' bgColor='orange'></Button></a>
          
         </div>
