@@ -41,10 +41,10 @@ const AboutMe = () => {
         </div>
 
         <div className="right flex flex-col space-y-10 w-1/2 max-sm:w-full max-sm:justify-center max-sm:items-center h-fit">
-            <p className='text-lg font-light leading-loose'>I am a skilled Full Stack Web Developer with proficiency in the MERN stack (MongoDB, Express.js, ReactJS, Node.js). My expertise spans HTML, CSS, SCSS, JavaScript, and TypeScript, allowing me to create dynamic and responsive web applications. With a strong foundation in both front-end and back-end development, I am adept at building seamless user experiences and efficient, scalable solutions.</p>
+            <p className='text-base font-light leading-loose'>I am a skilled Full Stack Web Developer with proficiency in the MERN stack (MongoDB, Express.js, ReactJS, Node.js). My expertise spans HTML, CSS, SCSS, JavaScript, and TypeScript, allowing me to create dynamic and responsive web applications. With a strong foundation in both front-end and back-end development, I am adept at building seamless user experiences and efficient, scalable solutions.</p>
             {
                 seeMore && (
-                    <p className='text-lg text-text font-light leading-loose'>I have a passion for developing innovative web solutions that improve the user experience and drive business growth. My approach to development is user-centric, ensuring that applications are not only functional but also intuitive and visually appealing. I am committed to continuous learning and staying updated with the latest industry trends and technologies.</p>
+                    <p className='text-base text-text font-light leading-loose'>I have a passion for developing innovative web solutions that improve the user experience and drive business growth. My approach to development is user-centric, ensuring that applications are not only functional but also intuitive and visually appealing. I am committed to continuous learning and staying updated with the latest industry trends and technologies.</p>
                 )
             }
             <div className='my-20' onClick={()=>setMore(!seeMore)} >
