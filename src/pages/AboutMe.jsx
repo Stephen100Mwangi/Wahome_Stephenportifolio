@@ -36,7 +36,7 @@ const AboutMe = () => {
                 //     duration:1
                 // }}}
                 >
-                <img src="./public/me.png" alt="" className='object-cover scale-90'/>
+                <img src="/aboutMe.svg" alt="" className='object-cover scale-90'/>
             </motion.div>
         </div>
 
