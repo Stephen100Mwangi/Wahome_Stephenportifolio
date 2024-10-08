@@ -13,52 +13,52 @@ const HireMe = () => {
 
   const[activated,setActivated] = useState(false);
   const hireMeRef = useRef(null);
-  const [counts,setCounts] = useState({projectCount:0,years:0,openSource:0});
+  const [counts,setCounts] = useState({projectCount:86,years:3,openSource:5});
 
-  useEffect(()=>{
-    const handleScroll = ()=>{
-      const container = hireMeRef.current;
-      if(container){
-        const{offsetTop, offsetHeight} = container
-        if(window.pageYOffset > offsetTop - offsetHeight - 200 && !activated){
-          startCounting();
-          setActivated(true);
-        }else if(window.pageYOffset < offsetTop - offsetHeight - 500 && activated){
-          resetCounts();
-          setActivated(false);
-        }
-      }
-    };
+  // useEffect(()=>{
+  //   const handleScroll = ()=>{
+  //     const container = hireMeRef.current;
+  //     if(container){
+  //       const{offsetTop, offsetHeight} = container
+  //       if(window.pageYOffset > offsetTop - offsetHeight - 200 && !activated){
+  //         startCounting();
+  //         setActivated(true);
+  //       }else if(window.pageYOffset < offsetTop - offsetHeight - 500 && activated){
+  //         resetCounts();
+  //         setActivated(false);
+  //       }
+  //     }
+  //   };
 
-    const startCounting = ()=>{
-      const updateCount = (target, key) => {
-        let count = 0;
-        const step = () => {
-          if (count < target) {
-            count++;
-            setCounts((prev) => ({ ...prev, [key]: count }));
-            setTimeout(step, 10);
-          } else {
-            setCounts((prev) => ({ ...prev, [key]: target }));
-          }
-        };
-        step();
-      };
+  //   const startCounting = ()=>{
+  //     const updateCount = (target, key) => {
+  //       let count = 0;
+  //       const step = () => {
+  //         if (count < target) {
+  //           count++;
+  //           setCounts((prev) => ({ ...prev, [key]: count }));
+  //           setTimeout(step, 10);
+  //         } else {
+  //           setCounts((prev) => ({ ...prev, [key]: target }));
+  //         }
+  //       };
+  //       step();
+  //     };
 
-      updateCount(projects, 'projects');
-      updateCount(years, 'years');
-      updateCount(openSource, 'openSource');
+  //     updateCount(projects, 'projects');
+  //     updateCount(years, 'years');
+  //     updateCount(openSource, 'openSource');
 
-    }
-    const resetCounts = () => {
-      setCounts({ projects: 0, years: 0, openSource: 0 });
-    };
-    window.addEventListener('scroll', handleScroll);
+  //   }
+  //   const resetCounts = () => {
+  //     setCounts({ projects: 0, years: 0, openSource: 0 });
+  //   };
+  //   window.addEventListener('scroll', handleScroll);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  },[activated, projects, years, openSource])
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // },[activated, projects, years, openSource])
 
 
 
@@ -74,15 +74,15 @@ const HireMe = () => {
         <div className="w-1/2 bg-card flex flex-col space-y-10 justify-center items-center max-sm:w-full">
           <div className="flex flex-wrap gap-x-5 justify-start items-start my-10">
             <div className="flex flex-col space-y-7 justify-center items-center w-40 max-sm:w-full">
-              <div data-count={projects} className='text-3xl flex items-center justify-center font-medium text-white'><span className='my_Counter'>0</span><span className='text-xl mx-1'>+</span></div>
+              <div data-count={projects} className='text-3xl flex items-center justify-center font-medium text-white'><span className='my_Counter'>{projects}</span><span className='text-xl mx-1'>+</span></div>
               <div className="text-base font-light text-white text-center">Projects completed</div>
             </div>
             <div className="flex flex-col space-y-7 justify-center items-center w-40 max-sm:w-full">
-              <div data-count={years} className='text-3xl flex items-center justify-center font-medium text-white'><span className='my_Counter'>0</span><span className='text-xl mx-1'>+</span></div>
+              <div data-count={years} className='text-3xl flex items-center justify-center font-medium text-white'><span className='my_Counter'>{years}</span><span className='text-xl mx-1'>+</span></div>
               <div className="text-base font-light text-white text-center">Years of Experience</div>
             </div>
             <div className="flex flex-col space-y-7 justify-center items-center w-40 max-sm:w-full">
-              <div data-count={openSource} className='text-3xl flex items-center justify-center font-medium text-white'><span className='my_Counter'>0</span><span className='text-xl mx-1'>+</span></div>
+              <div data-count={openSource} className='text-3xl flex items-center justify-center font-medium text-white'><span className='my_Counter'>{openSource}</span><span className='text-xl mx-1'>+</span></div>
               <div className="text-base font-light text-white text-center">Open Source Contributions</div>
             </div>
           </div>
