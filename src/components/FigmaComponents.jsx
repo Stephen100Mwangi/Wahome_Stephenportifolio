@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 const FigmaComponents = ({text, projectImage, count, description, icon, link}) => {
   return (
-    <div className='flex flex-col p-3 relative space-y-4 justify-center items-center space-x-2 shadow-md rounded-lg w-fit'>
+    <div className='w-[320px] rounded-lg flex flex-col space-y-5 p-3 relative justify-center items-center space-x-2 shadow-md'>
         <p className='text-xs absolute top-1 left-1'>{count}</p>
         <p className='text-lg'>{icon}</p>
         <p className='text-base'>{text}</p>

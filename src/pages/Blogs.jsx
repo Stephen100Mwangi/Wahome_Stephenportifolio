@@ -12,7 +12,7 @@ import { motion } from 'framer-motion'
 
 const Blogs = () => {
   return (
-    <div id='blogs' className='flex flex-col space-y-20 px-8 py-12'>
+    <div id='blogs' className='flex justify-center items-center flex-col space-y-20 px-8 py-12 mx-auto'>
       <div className="text-center font-bold text-3xl text-orange">My <span className='text-card'>Blogs</span></div>
       <div className="grid grid-cols-3 gap-20 max-sm:flex max-sm:flex-col max-sm:spacey-10">
         <Link to='https://medium.com/@mwangiwahome70/javascript-string-manipulation-b19a3c398730' target='_blank'>

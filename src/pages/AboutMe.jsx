@@ -9,7 +9,7 @@ const AboutMe = () => {
     const [seeMore,setMore] = useState(false)
   return (
     <div id='aboutMe' className='flex flex-row w-full h-fit px-8 py-12 max-h-screen bg-back max-sm:overflow-clip max-sm:flex-col'>
-        <div className="left flex flex-col justify-center items-center w-1/2 h-fit p-8 max-sm:flex-col max-sm:w-full">
+        <div className="flex flex-col justify-center items-center gap-y-20 w-1/2 h-fit p-2 max-sm:flex-col max-sm:w-full">
             <div className='text-card text-3xl font-bold z-50'>
                 About <span className='text-orange'>Me</span>?
             </div>
@@ -36,7 +36,7 @@ const AboutMe = () => {
                 //     duration:1
                 // }}}
                 >
-                <img src="/aboutMe.svg" alt="" className='object-cover scale-90'/>
+                <img src="/aboutMe.svg" alt="" className='object-cover scale-50'/>
             </motion.div>
         </div>
 

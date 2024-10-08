@@ -18,7 +18,8 @@ const Awards = () => {
                 <AwardCard institution='Kagumo High School' award='A- 74 Points' course='Kenya Certificate of Secondary Education' time='2017-2020' ></AwardCard>
                 <div className='flex flex-col space-y-3 my-32'>
                   <div className='font-bold pb-3 underline'>Certifications</div> 
-                  <AwardCard institution='Postman' award='Student Expert' course='AI Postman Student Expert'></AwardCard>
+                  <AwardCard institution='Postman' award='Student Expert' course='AI Postman Student Expert' link={"https://badgr.com/public/assertions/9qGbow9JSVmo_eI6NJXzuQ"}></AwardCard>
+                  <AwardCard institution='Microsoft' award='Microsoft Azure DevOPs' course='Introduction to Azure DevOps' link={"https://learn.microsoft.com/en-us/users/mwangiwahome-2948/achievements/qjavgr9e?ref=https%3A%2F%2Fwww.linkedin.com%2F"}></AwardCard>
                 </div>
                 
            </div>
