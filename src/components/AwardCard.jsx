@@ -6,7 +6,7 @@ const AwardCard = ({institution,award,time,course,link}) => {
   return (
     <a href={link} className='flex flex-col space-y-2'>
       <div className='font-bold text-base text-orange'>{institution}</div>
-      <div className='font-normal text-base text-text'>{award} <span className='font-thin text-base text-orange mx-5'>{course}</span></div>
+      <div className='font-normal text-base text-text'>{award} <span className='font-medium text-base text-orange mx-5'>{course}</span></div>
       <div className='font-mono text-sm text-orange'>{time}</div>
     </a>
   )

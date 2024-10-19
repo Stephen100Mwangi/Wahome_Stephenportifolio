@@ -1,6 +1,8 @@
+/* eslint-disable no-unused-vars */
+import React from 'react'
 import PropTypes from 'prop-types'
 
-const ProjectCard = ({image,text,description,link,languages}) => {
+const BlogCard = ({image,text,description,link,languages,actualWidth,height}) => {
   return (
     <div id='projectCard' className={`w-[400px] max-w-[400px] min-h-[560px] hover:shadow-2xl flex flex-col space-y-5 shadow-lg rounded-lg p-5 bg-cardColor`}>
       <div className='w-full flex items-center justify-center'>
@@ -11,12 +13,12 @@ const ProjectCard = ({image,text,description,link,languages}) => {
         <div className='text-card text-sm font-bold'>{languages}</div>
         <div className='text-text font-light text-sm'>{description}</div>
       </div>
-      <a href={link} className='text-xs text-center mx-auto bg-card hover:shadow-2xl text-white hover:text-card hover:rounded-full hover:bg-opacity-0 hover:outline p-4'>View Live application</a>
+      <a href={link} className='text-xs text-center mx-auto bg-card hover:shadow-2xl text-white hover:text-card hover:rounded-full hover:bg-opacity-0 hover:outline p-4'>View Blog</a>
     </div>
   )
 }
 
-ProjectCard.propTypes = {
+BlogCard.propTypes = {
     image: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
@@ -26,4 +28,4 @@ ProjectCard.propTypes = {
     link: PropTypes.string
 }
 
-export default ProjectCard
+export default BlogCard

@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-import React from 'react'
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import SkillCard from '../components/SkillCard';
@@ -35,7 +33,7 @@ const Skills = () => {
       </div>
 
       <div className="flex flex-row justify-between items-start max-sm:flex-col-reverse max-sm:-space-y-80">
-        <div className="w-1/2 h-96 overflow-scroll p-2 shadow-2xl flex flex-col space-y-3 pl-10 no-scrollbar max-sm:w-full">
+        <div className="w-1/2 h-96 overflow-scroll p-2 py-5 shadow-2xl flex flex-wrap gap-5 gap-x-12 no-scrollbar max-sm:w-full">
           <LanguageSkill text='ReactJS' icon={<FaReact />}/>
           <LanguageSkill text='TailwindCSS' icon={<SiTailwindcss />} />
           <LanguageSkill text='CSS' icon={<IoLogoCss3 />} />
