@@ -49,7 +49,7 @@ const Testimonials = () => {
   return (
     <div id='testimonials' className='flex justify-center items-start py-12 pt-10 min-h-screen px-8 max-sm:px-4'>
       <Toaster position='top-center'></Toaster>
-      <form ref={form} onSubmit={sendEmail} className='flex flex-col space-y-8 p-6 shadow-lg justify-center items-center max-sm:w-full'>
+      <form ref={form} onSubmit={sendEmail} className='flex flex-col space-y-8 p-6 shadow-lg justify-center items-center max-sm:w-[90%]'>
         <div className='text-orange text-center w-full text-3xl font-bold'>Contact <span className='text-card'>Me</span></div>
 
         <div className="flex flex-col space-y-2 w-[95%]">

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 const BlogCard = ({image,text,description,link,languages,actualWidth,height}) => {
   return (
-    <div id='projectCard' className={`w-[360px] max-sm:w-[350px] max-sm:justify-center max-sm:items-center min-h-[560px] hover:shadow-2xl flex flex-col space-y-5 shadow-lg rounded-lg p-5 bg-cardColor`}>
+    <div id='projectCard' className={`w-[360px] max-sm:w-[330px] max-sm:justify-center max-sm:items-center min-h-[560px] hover:shadow-2xl flex flex-col space-y-5 shadow-lg rounded-lg p-5 bg-cardColor`}>
       <div className='w-full flex items-center justify-center'>
         <img src={image} alt="Image" className='w-full shadow h-[260px] rounded-lg' />
       </div>
