@@ -47,9 +47,9 @@ const Testimonials = () => {
     };
 
   return (
-    <div id='testimonials' className='flex justify-center items-start py-12 pt-10 min-h-screen px-8'>
+    <div id='testimonials' className='flex justify-center items-start py-12 pt-10 min-h-screen px-8 max-sm:px-4'>
       <Toaster position='top-center'></Toaster>
-      <form ref={form} onSubmit={sendEmail} className='flex flex-col space-y-8 p-6 shadow-lg justify-center items-center max-sm:w-[300px]'>
+      <form ref={form} onSubmit={sendEmail} className='flex flex-col space-y-8 p-6 shadow-lg justify-center items-center max-sm:w-full'>
         <div className='text-orange text-center w-full text-3xl font-bold'>Contact <span className='text-card'>Me</span></div>
 
         <div className="flex flex-col space-y-2 w-[95%]">
@@ -64,7 +64,7 @@ const Testimonials = () => {
       
         <div className="flex flex-col space-y-2 w-[95%]">
           <label htmlFor="Message" className='font-bold text-base'>Message</label>
-          <textarea name="message" cols={30} rows={5} placeholder='Type your subject here...' required className='p-2 px-6 outline-none'/>
+          <textarea name="message" cols={30} rows={5} placeholder='Type your message here...' required className='p-2 px-6 outline-none'/>
         </div>
         
         <div className="w-full flex justify-center items-center">

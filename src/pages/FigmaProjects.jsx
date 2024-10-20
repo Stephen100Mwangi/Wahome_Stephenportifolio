@@ -2,7 +2,7 @@ import FigmaComponents from "../components/FigmaComponents"
 import { FaFigma } from "react-icons/fa6";
 const FigmaProjects = () => {
   return (
-    <div className="flex flex-row flex-wrap justify-start mt-20 gap-y-20 gap-x-10 items-center max-sm:gap-y-16 max-sm:gap-x-0 p-8">
+    <div className="flex flex-row flex-wrap justify-evenly max-sm:justify-center max-sm:items-center mt-20 gap-y-20 gap-x-10 items-center max-sm:gap-y-16 max-sm:gap-x-0 p-8">
       <FigmaComponents count={1} link="https://www.figma.com/design/WgRECuJv2Lza8sNaUmbS6t/DeKUT-Student-Portal?node-id=0-1&t=3x0uwC4DYhPGKilX-1" text="Student Portal" projectImage="/design1.jpg" description="A UI design for a revamped student portal" icon={<FaFigma />} ></FigmaComponents>
       <FigmaComponents count={2} link="https://www.figma.com/proto/NFXuIk00E0mpRvzNYYOLNH/MPESA?node-id=102-73&t=g1SDxSK2qGEIkoE6-1&scaling=scale-down&content-scaling=fixed&page-id=102%3A72" text="MPESA App" projectImage="/image3.jpg" description="A UI design for a revamped student portal" icon={<FaFigma />} ></FigmaComponents>
       <FigmaComponents count={3} link="https://www.figma.com/proto/j0fsPxPN9h4MCgLeS4mF5k/HeadPhones?node-id=1-72&t=ZRZohveowOPFcr8Z-1&scaling=scale-down&content-scaling=fixed&page-id=1%3A71" text="E-Commerce" projectImage="/design2.jpg" description="A UI design for an E-commerce website. Your one-stop shop for all electronics." icon={<FaFigma />} ></FigmaComponents>

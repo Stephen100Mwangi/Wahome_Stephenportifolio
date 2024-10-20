@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 const BlogCard = ({image,text,description,link,languages,actualWidth,height}) => {
   return (
-    <div id='projectCard' className={`w-[400px] max-w-[400px] min-h-[560px] hover:shadow-2xl flex flex-col space-y-5 shadow-lg rounded-lg p-5 bg-cardColor`}>
+    <div id='projectCard' className={`w-[390px] max-w-[390px] max-sm:w-[350px] max-sm:justify-center max-sm:items-center min-h-[560px] hover:shadow-2xl flex flex-col space-y-5 shadow-lg rounded-lg p-5 bg-cardColor`}>
       <div className='w-full flex items-center justify-center'>
         <img src={image} alt="Image" className='w-full shadow h-[260px] rounded-lg' />
       </div>
@@ -13,7 +13,7 @@ const BlogCard = ({image,text,description,link,languages,actualWidth,height}) =>
         <div className='text-card text-sm font-bold'>{languages}</div>
         <div className='text-text font-light text-sm'>{description}</div>
       </div>
-      <a href={link} className='text-xs text-center mx-auto bg-card hover:shadow-2xl text-white hover:text-card hover:rounded-full hover:bg-opacity-0 hover:outline p-4'>View Blog</a>
+      <a href={link} className='text-xs text-center mx-auto bg-card hover:shadow-2xl text-white hover:rounded-full px-6 p-4'>View Blog</a>
     </div>
   )
 }

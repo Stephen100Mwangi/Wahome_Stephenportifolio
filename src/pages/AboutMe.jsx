@@ -41,7 +41,7 @@ const AboutMe = () => {
       <div className="right flex flex-col space-y-2 w-1/2 max-sm:w-full max-sm:justify-center max-sm:items-center h-fit">
         <p className="text-base font-light leading-loose">
           I am a skilled Full Stack Web Developer with proficiency in the
-          <span className="text-blue-500"> MERN</span> stack
+          <span className="text-blue-500 font-semibold"> MERN</span> stack
           (MongoDB, Express.js, ReactJS, Node.js). My expertise spans
           <span className="text-blue-500 font-semibold"> HTML</span>,
           <span className="text-blue-500 font-semibold"> CSS</span>,
