@@ -11,7 +11,7 @@ const ProjectCard = ({image,text,description,link,languages}) => {
         <div className='text-card text-sm font-bold'>{languages}</div>
         <div className='text-text font-light text-sm'>{description}</div>
       </div>
-      <a href={link} className='text-xs text-center mx-auto bg-card hover:shadow-2xl text-white hover:rounded-full p-4 px-6'>View Live application</a>
+      <a target='_blank' href={link} className='text-xs text-center mx-auto bg-card hover:shadow-2xl text-white hover:rounded-full p-4 px-6'>View Live application</a>
     </div>
   )
 }
