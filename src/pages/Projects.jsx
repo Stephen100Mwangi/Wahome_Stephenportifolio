@@ -19,10 +19,10 @@ const Projects = () => {
       >
         <ProjectCard
           text="Dynamic Weather Forecast"
-          link={"https://weather-app-jade-kappa-50.vercel.app/"}
           description="A web app that utilizes WeatherAPI to fetch and retrieve realtime weather conditions of different cities based on the search parameter"
           image="/weather_.png"
           languages={["HTML, ", "CSS, ", "JavaScript, ", "WeatherAPI"]}
+          link={"https://weather-app-jade-kappa-50.vercel.app/"}
         />
         <ProjectCard
           text="Appointment Booking System"
@@ -57,19 +57,27 @@ const Projects = () => {
           description="A fullstack web app that employs MERN (MongoDB,ExpressJS,ReactJS,NodeJS) to facilitate creating, reading, updating and deleting of books in a library.Utilizes HTTP requests for data handling"
           image="/book.jpg"
           languages={["ReactJS", ", NodeJS", ", Express", ", TailwindCSS"]}
-          link={"https://bookstore-client-z9ba.onrender.com/"}
+          link={"https://github.com/Stephen100Mwangi/mern-book-store"}
         />
         <ProjectCard
           text="Zeraki School Management"
           description="A fullstack web app that employs MERN (MongoDB,ExpressJS,ReactJS,NodeJS) to facilitate creating, reading, updating and deleting of books in a library.Utilizes HTTP requests for data handling"
           image="/Zeraki.png"
-          languages={["ReactJS", ", NodeJS", ", Express", ", TailwindCSS",", JSON-server"]}
+          languages={[
+            "ReactJS",
+            ", NodeJS",
+            ", Express",
+            ", TailwindCSS",
+            ", JSON-server",
+          ]}
+          link={"https://github.com/Stephen100Mwangi/zeraki_junior_developer"}
         />
         <ProjectCard
           text="Airbnb Recommender system"
           description="A fullstack web app that utilizes Voice interaction, Face Recognition and Machine Learning to recommend favorite airbnb to customers based on their preference and previous activities."
           image="/rooms.jpg"
           languages={["ReactJS, ", "Python ", "Express ", "Django ", "KNN"]}
+          link={"https://github.com/Stephen100Mwangi/BetterRooms"}
         />
       </div>
     </div>
