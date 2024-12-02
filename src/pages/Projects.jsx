@@ -76,8 +76,35 @@ const Projects = () => {
           text="Airbnb Recommender system"
           description="A fullstack web app that utilizes Voice interaction, Face Recognition and Machine Learning to recommend favorite airbnb to customers based on their preference and previous activities."
           image="/rooms.jpg"
-          languages={["ReactJS, ", "Python ", "Express ", "Django ", "KNN"]}
+          languages={["ReactJS, ", "Python, ", "Express, ", "Django, ", "KNN"]}
           link={"https://github.com/Stephen100Mwangi/BetterRooms"}
+        />
+        <ProjectCard
+          text="Weather App"
+          description="A simple web app built using Flask that allows users to view real-time weather conditions for cities across the world. The application leverages OpenWeatherMap API."
+          image="/weather.jpg"
+          languages={[
+            "HTML, ",
+            "Python, ",
+            "Flask, ",
+            "OpenWeatherMap API, ",
+            "Bulma.css",
+          ]}
+          link={"https://github.com/Stephen100Mwangi/Weather_App-FLASK"}
+        />
+        <ProjectCard
+          text="Customer Rating App"
+          description="A web application built using Python, Flask, HTML and CSS. The application allows users to send their feed back and get an email for the same. The application employs heroku and mailtrap for deployment and storing the emails respectively. The data is stored inside Postgres."
+          image="/lexus.jpg"
+          languages={[
+            "HTML, ",
+            "Python, ",
+            "Flask, ",
+            "Heroku, ",
+            "CSS",
+            "MailTrap",
+          ]}
+          link={"https://github.com/Stephen100Mwangi/FLASK-LEXUS_FEEDBACK"}
         />
       </div>
     </div>
