@@ -1,11 +1,11 @@
-import {motion} from 'framer-motion';
-import {backInOut} from 'framer-motion/dom';
+import { motion } from "framer-motion";
+import { backInOut } from "framer-motion/dom";
 
 const AboutMe = () => {
   return (
     <div
       id="aboutMe"
-      className="flex flex-row w-full h-fit px-8 py-12 max-h-screen bg-back max-sm:overflow-clip max-sm:flex-col"
+      className="flex flex-row w-full h-fit px-8 py-12 min-h-screen bg-back max-sm:overflow-clip max-sm:flex-col"
     >
       <div className="flex flex-col justify-center items-center gap-y-20 w-1/2 h-fit p-2 max-sm:flex-col max-sm:w-full">
         <div className="text-card text-3xl font-bold z-50">
@@ -27,8 +27,8 @@ const AboutMe = () => {
             times: [0, 0.4, 0.7, 1],
           }}
           exit={{
-            rotate: '0deg',
-            scale: '1',
+            rotate: "0deg",
+            scale: "1",
           }}
           // transition={={{
           //     duration:1
@@ -42,44 +42,89 @@ const AboutMe = () => {
         <p className="text-base font-light leading-loose">
           I am a skilled Full Stack Web Developer with proficiency in the
           <span className="text-blue-500 font-semibold"> MERN</span> stack
-          (MongoDB, Express.js, ReactJS, Node.js). My expertise spans
+          (MongoDB, Express.js, ReactJS, Node.js) as well as the{" "}
+          <span className="text-blue-500 font-semibold">PERN</span> stack
+          (Postgres, Express.js, ReactJS, Node.js). My expertise spans
           <span className="text-blue-500 font-semibold"> HTML</span>,
           <span className="text-blue-500 font-semibold"> CSS</span>,
-          <span className="text-blue-500 font-semibold"> TailwindCSS</span>, and{' '}
-          <span className="text-blue-500 font-semibold"> Material UI</span>, allowing me to craft dynamic and responsive user interfaces.
-          Additionally, I am proficient in backend technologies, including{' '}
-          <span className="text-green-500 font-semibold">Node.js</span> and{' '}
-          <span className="text-green-500 font-semibold">Express.js</span>.
+          <span className="text-blue-500 font-semibold"> TailwindCSS</span>, and{" "}
+          <span className="text-blue-500 font-semibold"> Material UI</span>,
+          allowing me to craft dynamic and responsive user interfaces.
+          Additionally, I am proficient in backend technologies, including{" "}
+          <span className="text-green-500 font-semibold">Node.js, </span>
+          <span className="text-green-500 font-semibold">
+            Express.js
+          </span> and{" "}
+          <span className="text-green-500 font-semibold">Flask</span>.
         </p>
 
         <p className="text-base font-light leading-loose">
-          My skill set extends to modern web development with{' '}
-          <span className="text-green-500 font-semibold">JavaScript</span>,{' '}
-          <span className="text-green-500 font-semibold">TypeScript</span>, and advanced frameworks like{' '}
-          <span className="text-green-500 font-semibold">Next.js</span>, enabling the development of scalable, efficient, and performant web applications.
+          My skill set extends to modern web development with{" "}
+          <span className="text-green-500 font-semibold">JavaScript</span>,{" "}
+          <span className="text-green-500 font-semibold">TypeScript</span>, and
+          advanced frameworks like{" "}
+          <span className="text-green-500 font-semibold">Next.js</span>,
+          enabling the development of scalable, efficient, and performant web
+          applications.
         </p>
 
         <p className="text-base text-text font-light leading-loose">
-          I am also well-versed in tools for version control and collaboration, such as{' '}
-          <span className="text-purple-500 font-semibold">Git</span> and{' '}
-          <span className="text-purple-500 font-semibold">GitHub</span>. My workflow is further streamlined by design tools like{' '}
-          <span className="text-purple-500 font-semibold">Figma</span> and{' '}
-          <span className="text-purple-500 font-semibold">Canva</span>, ensuring seamless integration of design and development processes.
+          I am also well-versed in tools for version control and collaboration,
+          such as <span className="text-purple-500 font-semibold">Git</span> and{" "}
+          <span className="text-purple-500 font-semibold">GitHub</span>. My
+          workflow is further streamlined by design tools like{" "}
+          <span className="text-purple-500 font-semibold">Figma</span> and{" "}
+          <span className="text-purple-500 font-semibold">Canva</span>, ensuring
+          seamless integration of design and development processes.
         </p>
 
         <p className="text-base text-text font-light leading-loose">
-          Moreover, I possess a strong foundation in{' '}
-          <span className="text-green-500 font-semibold">Data Science and Algorithms</span>, along with proficiency in{' '}
-          <span className="text-green-500 font-semibold">Python</span>, allowing me to incorporate data-driven insights into application logic and performance optimization.
+          Moreover, I possess a strong foundation in{" "}
+          <span className="text-green-500 font-semibold">
+            Data Science and Algorithms
+          </span>
+          , along with proficiency in{" "}
+          <span className="text-green-500 font-semibold">Python</span>, allowing
+          me to incorporate data-driven insights into application logic and
+          performance optimization.
         </p>
 
         <p className="text-base text-text font-light leading-loose">
-          My development approach is user-centric, leveraging principles of{' '}
-          <span className="text-orange-500 font-semibold">Human-Computer Interaction (HCI)</span> to create intuitive, accessible, and visually appealing experiences. I am committed to continuous learning and staying updated with the latest industry trends and technologies.
+          My proficiency in software testing tools such as{" "}
+          <span className="text-green-500 font-semibold">Jest</span> and{" "}
+          <span className="text-green-500 font-semibold">Cypress</span> enables
+          me to develop error-free code, ensuring seamless web development. This
+          is made possible through{" "}
+          <span className="text-purple-500 font-semibold">E2E testing</span>,
+          <span className="text-purple-500 font-semibold"> Unit Testing</span>{" "}
+          and
+          <span className="text-purple-500 font-semibold">
+            {" "}
+            Component Testing
+          </span>
+          . With a strong foundation in{" "}
+          <span className="text-green-500 font-semibold">Docker</span> I am able to dockerize applications - eliminating the common statement{" "}
+          <span className="text-purple-500 font-light">
+            &quot;It works only on my machine&quot;
+          </span>{" "}
+          .This coupled with my skills in{" "}
+          <span className="text-green-500 font-semibold">AWS</span> Amazon web
+          services, <span className="text-green-500 font-semibold">Render</span>{" "}
+          and <span className="text-green-500 font-semibold">Vercel</span> for
+          web hosting, ensures creation of fully functional web applications
+          that are also accessible to the public.
         </p>
 
+        <p className="text-base text-text font-light leading-loose">
+          My development approach is user-centric, leveraging principles of{" "}
+          <span className="text-orange-500 font-semibold">
+            Human-Computer Interaction (HCI)
+          </span>{" "}
+          to create intuitive, accessible, and visually appealing experiences. I
+          am committed to continuous learning and staying updated with the
+          latest industry trends and technologies.
+        </p>
       </div>
-
     </div>
   );
 };
