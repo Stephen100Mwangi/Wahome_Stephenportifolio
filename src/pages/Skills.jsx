@@ -118,17 +118,17 @@ const Skills = () => {
 
       <div className="flex flex-row flex-wrap gap-10 justify-evenly max-sm:flex-col">
         <SkillCard
-          text={`${ui}+ years experience`}
+          text={`3+ years experience`}
           skill="UI/UX Design"
           skill_progress={<img src="/ui_ux.svg" className="size-64"></img>}
         ></SkillCard>
         <SkillCard
-          text={`${front}+ years experience`}
+          text={`4+ years experience`}
           skill="Frontend Web Development"
           skill_progress={<img src="/frontend.svg" className="size-64"></img>}
         ></SkillCard>
         <SkillCard
-          text={`${back}+ years experience`}
+          text={`3+ years experience`}
           skill="Backend Development"
           skill_progress={<img src="/server.svg" className="size-64"></img>}
         ></SkillCard>
