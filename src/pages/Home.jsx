@@ -3,7 +3,7 @@ import { MdWavingHand } from "react-icons/md";
 import Button from '../components/Button';
 
 const Home = () => {
-  const options = ["Web Developer","UI/UX Designer"];
+  const options = ["Full-stack Web Developer","UI/UX Designer"];
   const randomRole = options[0];
   const randomRole2 = options[1];
 

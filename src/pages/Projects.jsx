@@ -70,7 +70,7 @@ const Projects = () => {
             ", TailwindCSS",
             ", JSON-server",
           ]}
-          link={"https://github.com/Stephen100Mwangi/zeraki_junior_developer"}
+          link={"https://zerakianalyticsclient.onrender.com"}
         />
         <ProjectCard
           text="Airbnb Recommender system"
