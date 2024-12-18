@@ -18,6 +18,23 @@ const Projects = () => {
         className="flex flex-row flex-wrap justify-evenly mt-20 gap-y-20 gap-x-10 items-center max-sm:gap-y-16 max-sm:gap-x-0"
       >
         <ProjectCard
+          text="AI Driven Crop Diseases App"
+          description="A web application that uses AI to help farmers quickly identify crop diseases through image recognition and provides tailored recommendations for treatment. The project aims to empower farmers with early disease detection to reduce crop losses and improve agricultural yield."
+          image="/crop.png"
+          languages={[
+            "React.js, ",
+            "TailwindCSS, ",
+            "TypeScript, ",
+            "Jest, ",
+            "Cypress, ",
+            "Python, ",
+            "Flask, ",
+            "CRON, ",
+            "WebSockets",
+          ]}
+          link={"https://github.com/Stephen100Mwangi/CROP_DISEASES/"}
+        />
+        <ProjectCard
           text="Dynamic Weather Forecast"
           description="A web app that utilizes WeatherAPI to fetch and retrieve realtime weather conditions of different cities based on the search parameter"
           image="/weather_.png"

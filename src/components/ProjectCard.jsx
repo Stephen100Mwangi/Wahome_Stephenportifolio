@@ -16,7 +16,9 @@ const ProjectCard = ({ image, text, description, link, languages }) => {
       <div className="flex flex-col items-start justify-start space-y-3">
         <div className="text-orange font-medium text-base ">{text}</div>
         <div className="text-card text-sm font-bold">{languages}</div>
-        <div className="text-text font-light text-sm">{description}</div>
+        <div className="text-text font-light text-sm line-clamp-5">
+          {description}
+        </div>
       </div>
       <a
         target="_blank"
