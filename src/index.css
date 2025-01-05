@@ -3,7 +3,6 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,7 +10,7 @@
 .openSans {
   font-family: Open Sans;
 }
-.open{
+.open {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 500;
@@ -54,8 +53,6 @@
 html {
   scroll-behavior: smooth;
 }
-
-
 
 .mont {
   font-family: Montserrat;
@@ -120,17 +117,23 @@ html {
   color: #ff5733; /* Matches the color of skills */
 }
 
-@keyframes marquee {
-  0%{
-    transform: translateX(-200%);
-  }
-  100%{
-    transform: translateX(0%);
-  }
-  
+.fixMe {
+  position: fixed;
+  top: 20%;
+  right: -2%;
+  z-index: 1000;
 }
 
-.animate-marquee{
+@keyframes marquee {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee {
   display: flex;
   animation: marquee 20s linear infinite;
 }
