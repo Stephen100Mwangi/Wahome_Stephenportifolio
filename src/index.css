@@ -119,6 +119,7 @@ html {
 
 .fixMe {
   position: fixed;
+  visibility: hidden;
   top: 20%;
   right: -2%;
   z-index: 1000;
