@@ -22,7 +22,7 @@ const Footer = () => {
             <Link to='https://medium.com/@mwangiwahome70' target='_blank'><FaMedium /></Link>
             <Link to='https://x.com/Mwangi99084926?t=XdTg-MQw8xpaDrGkcUSPtw&s=09' target='_blank'><FaTwitter /></Link>
             <Link to='https://github.com/Stephen100Mwangi' target='_blank'><FaGithub /></Link>
-            <Link to='https://www.linkedin.com/in/wahome-stephen-mwangi-786690268/' target='_blank'><FaLinkedinIn /></Link>
+            <Link to='https://www.linkedin.com/in/stephen-wahome-51b879316/' target='_blank'><FaLinkedinIn /></Link>
             <Link to='tel:+254758725032' target='_blank'><FaWhatsapp /></Link>
         </div>
         <div className="contacts flex flex-col space-y-3 justify-start items-start text-white">
