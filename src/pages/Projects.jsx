@@ -18,6 +18,13 @@ const Projects = () => {
         className="flex flex-row flex-wrap justify-evenly mt-20 gap-y-20 gap-x-10 items-center max-sm:gap-y-16 max-sm:gap-x-0"
       >
         <ProjectCard
+          text="Mynikeshoe – A Modern E-Commerce Platform"
+          description="Mynikeshoe is a sleek and responsive online store built with **React.js, TailwindCSS, and JavaScript**. Designed for an effortless shopping experience, it features a clean UI, smooth navigation, and dynamic product displays. Users can explore the latest Nike collections, add items to their cart, and shop with ease. 🚀👟"
+          image="/nike.png"
+          languages={["React.js, ", "TailwindCSS, ", "JavaScript, "]}
+          link={"https://mynikeshop.vercel.app/"}
+        />
+        <ProjectCard
           text="AI Driven Crop Diseases App"
           description="A web application that uses AI to help farmers quickly identify crop diseases through image recognition and provides tailored recommendations for treatment. The project aims to empower farmers with early disease detection to reduce crop losses and improve agricultural yield."
           image="/crop.png"

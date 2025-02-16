@@ -10,7 +10,7 @@ const ProjectCard = ({ image, text, description, link, languages }) => {
         <img
           src={image}
           alt="Image"
-          className="w-full shadow h-[260px] rounded-lg"
+          className="w-[100%] shadow h-[260px] rounded-lg object-cover"
         />
       </div>
       <div className="flex flex-col items-start justify-start space-y-3">
