@@ -25,6 +25,13 @@ const Projects = () => {
           link={"https://mynikeshop.vercel.app/"}
         />
         <ProjectCard
+          text="MovieHub"
+          description="A React.js application that implements The Movie Database (TMDB). Allows users to search for movies and even see trending movies. The app utilizes appwrite for `Backend as A service` functionality.🚀🎬"
+          image="/movie.png"
+          languages={["React.js, ", "TailwindCSS, ", "Typescript, ","appwrite, ","Flowbite"]}
+          link={"https://moviehub-juqq.onrender.com/"}
+        />
+        <ProjectCard
           text="AI Driven Crop Diseases App"
           description="A web application that uses AI to help farmers quickly identify crop diseases through image recognition and provides tailored recommendations for treatment. The project aims to empower farmers with early disease detection to reduce crop losses and improve agricultural yield."
           image="/crop.png"
