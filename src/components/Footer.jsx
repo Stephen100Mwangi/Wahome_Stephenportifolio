@@ -23,7 +23,7 @@ const Footer = () => {
             <Link to='https://x.com/Mwangi99084926?t=XdTg-MQw8xpaDrGkcUSPtw&s=09' target='_blank'><FaTwitter /></Link>
             <Link to='https://github.com/Stephen100Mwangi' target='_blank'><FaGithub /></Link>
             <Link to='https://www.linkedin.com/in/stephen-wahome-51b879316/' target='_blank'><FaLinkedinIn /></Link>
-            <Link to='https://wa.me/254758725032?text=Hello 👋.%20I%20came%20across%20your%20portfolio🚀🚀.And%20I%20would%20like%20to%20chat' target='_blank'  rel='noopener noreferrer'><FaWhatsapp /></Link>
+            <Link to='https://wa.me/254758725032?text=Hello 👋.%20I%20came%20across%20your%20portfolio🚀🚀. And%20I%20would%20like%20to%20chat' target='_blank'  rel='noopener noreferrer'><FaWhatsapp /></Link>
         </div>
         <div className="contacts flex flex-col space-y-3 justify-start items-start text-white">
           <div className="text-orange text-lg pb-3 cursor-pointer hover:border-b-2 hover:border-orange transition-all">Contacts</div>
