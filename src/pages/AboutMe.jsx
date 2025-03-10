@@ -42,16 +42,18 @@ const AboutMe = () => {
         <p className="text-base font-light leading-loose">
           I am a skilled Full Stack Web Developer with proficiency in the
           <span className="text-blue-500 font-semibold"> MERN</span> stack
-          (MongoDB, Express.js, ReactJS, Node.js) as well as the{" "}
+          (MongoDB, Express.js, ReactJS, Node.js),<span className="text-blue-500 font-semibold"> React Native</span> as well as the{" "}
           <span className="text-blue-500 font-semibold">PERN</span> stack
           (Postgres, Express.js, ReactJS, Node.js). My expertise spans
           <span className="text-blue-500 font-semibold"> HTML</span>,
           <span className="text-blue-500 font-semibold"> CSS</span>,
+          <span className="text-blue-500 font-semibold"> Nativewind</span>,
           <span className="text-blue-500 font-semibold"> TailwindCSS</span>, and{" "}
           <span className="text-blue-500 font-semibold"> Material UI</span>,
           allowing me to craft dynamic and responsive user interfaces.
           Additionally, I am proficient in backend technologies, including{" "}
           <span className="text-green-500 font-semibold">Node.js, </span>
+          <span className="text-green-500 font-semibold">Next.js, </span>
           <span className="text-green-500 font-semibold">
             Express.js
           </span> and{" "}
