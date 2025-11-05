@@ -33,7 +33,7 @@ const Home = () => {
           </div>
         </div>
         <p className="font-bold text-4xl text-white max-sm:text-3xl">
-          I am <span>Stephen Mwangi</span> a{" "}
+          I am <span>Stephen Wahome</span> a{" "}
           <span className="text-orange">{role}</span>
         </p>
         <a href="#projects">
