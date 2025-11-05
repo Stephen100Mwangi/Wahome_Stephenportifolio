@@ -7,7 +7,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import Button from "../components/Button";
 
 const Home = () => {
-  const options = ["Full-stack Web Developer", "UI/UX Designer"];
+  const options = ["Software Engineer", "Quality Assurance Engineer"];
   const randomRole = options[0];
   const randomRole2 = options[1];
 
